@@ -28,8 +28,8 @@ export default function Screen04({ navigation }) {
             rating: 4.2,
             mainImage: require('../assets/DATA/Container 7 (2).png'),
             thumbnailImages: [
-                require('../assets/DATA/Container 7 (3).png'),
                 require('../assets/DATA/Container 7 (1).png'),
+                require('../assets/DATA/Container 7 (2).png'),
                 require('../assets/DATA/Container 7 (4).png'),
                 require('../assets/DATA/Container 7.png'),
 
@@ -42,9 +42,9 @@ export default function Screen04({ navigation }) {
             rating: 4.8,
             mainImage: require('../assets/DATA/Container 7 (1).png'),
             thumbnailImages: [
+                require('../assets/DATA/Container 7 (1).png'),
                 require('../assets/DATA/Container 7 (2).png'),
                 require('../assets/DATA/Container 7 (4).png'),
-                require('../assets/DATA/Container 7 (3).png'),
                 require('../assets/DATA/Container 7.png'),
 
             ]
@@ -57,10 +57,10 @@ export default function Screen04({ navigation }) {
           rating: 4.8,
           mainImage: require('../assets/DATA/Container 7 (1).png'),
           thumbnailImages: [
-              require('../assets/DATA/Container 7 (2).png'),
-              require('../assets/DATA/Container 7 (4).png'),
-              require('../assets/DATA/Container 7 (3).png'),
-              require('../assets/DATA/Container 7.png'),
+            require('../assets/DATA/Container 7 (1).png'),
+            require('../assets/DATA/Container 7 (2).png'),
+            require('../assets/DATA/Container 7 (4).png'),
+            require('../assets/DATA/Container 7.png'),
 
           ]
       },
@@ -87,11 +87,13 @@ export default function Screen04({ navigation }) {
     return (
         <View style={{ padding: 5 ,height:'100%',overflow:'scroll',width:'100%'}}>
 
+            {/* return trang truoc */}
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Icon name="arrow-left" size={20} onPress={() => navigation.goBack()} />
                 <Text style={{ fontWeight: '700', marginLeft: 20 }}>{selectedProduct.name}</Text>
             </View>
 
+            {/* main img */}
             <View style={{ alignItems:'center', marginVertical: 5 }}>
                 <Image source={selectedProduct.mainImage} style={{ width: 300, height: 200 }} />
             </View>
